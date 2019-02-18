@@ -67,8 +67,7 @@ async function fetchRandomJoke() {
     const resp = await fetch(`https://icanhazdadjoke.com/`, {
       method: 'GET',
       headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
+        'Accept': 'application/json'
       }
     });
     const json = await resp.json();
@@ -89,8 +88,7 @@ async function fetchJokeByWord(str) {
     const resp = await fetch(`https://icanhazdadjoke.com/search?term=${str}`, {
       method: 'GET',
       headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
+        'Accept': 'application/json'
       }
     });
     const json = await resp.json();
